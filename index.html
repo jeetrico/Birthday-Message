@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A beautiful interactive birthday surprise."
+    >
+
+    <title>Birthday Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Background -->
+
+    <div class="stars"></div>
+
+    <div class="background-glow"></div>
+
+
+    <!-- Music -->
+
+    <audio
+        id="birthdayMusic"
+        loop
+        preload="auto"
+    >
+
+        <source
+            src="music.mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+    <!-- =====================================================
+         SCREEN 1
+    ====================================================== -->
+
+    <section
+        id="intro"
+        class="screen active"
+    >
+
+        <div class="intro-content">
+
+            <div class="intro-heart">
+                ♥
+            </div>
+
+            <p class="eyebrow">
+                A little surprise for you
+            </p>
+
+            <h1>
+
+                Hey
+
+                <span id="introName">
+                    __________
+                </span>
+
+                ❤️
+
+            </h1>
+
+            <p class="intro-text">
+
+                I made something special
+                just for you.
+
+            </p>
+
+            <button
+                id="startButton"
+                class="primary-button"
+                type="button"
+            >
+
+                Open Your Surprise ♥️
+
+            </button>
+
+            <div class="creator-credit">
+
+                Made with ❤️ by
+
+                <strong>
+                    JEET BANERJEE
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCREEN 2
+    ====================================================== -->
+
+    <section
+        id="treeScreen"
+        class="screen"
+    >
+
+        <div class="tree-top-text">
+
+            Something beautiful is growing
+            for you... ✨
+
+        </div>
+
+
+        <canvas id="treeCanvas"></canvas>
+
+
+        <div class="tree-message">
+
+            <div id="messageLines">
+
+                <p>
+                    My dearest
+                    <span class="recipient-name">
+                        __________
+                    </span>
+                    ❤️
+                </p>
+
+                <p>
+                    Happy Birthday! 🎂
+                </p>
+
+                <p>
+                    May GOD bless you
+                    with endless happiness 🤍
+                </p>
+
+                <p>
+                    May all your dreams come true ✨
+                </p>
+
+                <p>
+                    Keep smiling and shining always 💕
+                </p>
+
+                <p>
+                    You deserve every beautiful
+                    thing in this world 🥺❤️
+                </p>
+
+                <p>
+                    And I will always wish
+                    the best for you. ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <button
+            id="continueButton"
+            class="secondary-button"
+            type="button"
+        >
+
+            There's more... ✨
+
+        </button>
+
+
+        <div class="bottom-credit">
+
+            Made with ❤️ by
+
+            <strong>
+                JEET BANERJEE
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCREEN 3
+    ====================================================== -->
+
+    <section
+        id="memories"
+        class="screen"
+    >
+
+        <div class="section-container">
+
+            <p class="eyebrow">
+
+                Just for
+
+                <span class="recipient-name">
+                    __________
+                </span>
+
+            </p>
+
+
+            <h2>
+
+                You make ordinary moments
+
+                <br>
+
+                feel
+
+                <span>
+                    special.
+                </span>
+
+            </h2>
+
+
+            <div class="memory-grid">
+
+
+                <div class="memory-card">
+
+                    <div class="memory-icon">
+                        😊
+                    </div>
+
+                    <h3>
+                        Your Smile
+                    </h3>
+
+                    <p>
+
+                        Never stop smiling.
+                        It makes everything around
+                        you a little brighter.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="memory-card">
+
+                    <div class="memory-icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        Your Energy
+                    </h3>
+
+                    <p>
+
+                        You have a special way
+                        of making ordinary moments
+                        memorable.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="memory-card">
+
+                    <div class="memory-icon">
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Simply You
+                    </h3>
+
+                    <p>
+
+                        You don't need to change.
+                        Being yourself is already
+                        something beautiful.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                id="pokemonButton"
+                class="primary-button"
+                type="button"
+            >
+
+                Your Final Surprise ⚡
+
+            </button>
+
+
+            <div class="static-credit">
+
+                Made with ❤️ by
+
+                <strong>
+                    JEET BANERJEE
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCREEN 4
+    ====================================================== -->
+
+    <section
+        id="pokemonScreen"
+        class="screen"
+    >
+
+        <div class="pokemon-scene">
+
+
+            <!-- Poké Ball area -->
+
+            <div
+                id="pokemonIntro"
+                class="pokemon-intro"
+            >
+
+                <p class="eyebrow">
+
+                    One last surprise...
+
+                </p>
+
+
+                <h2 class="pokemon-title">
+
+                    Something special
+                    is waiting for you ❤️
+
+                </h2>
+
+
+                <div
+                    id="pokeball"
+                    class="pokeball"
+                    role="button"
+                    tabindex="0"
+                    aria-label="Open the surprise"
+                >
+
+                    <div class="pokeball-aura"></div>
+
+                    <div class="pokeball-top"></div>
+
+                    <div class="pokeball-bottom"></div>
+
+                    <div class="pokeball-line"></div>
+
+                    <div class="pokeball-center">
+
+                        <div class="pokeball-center-inner"></div>
+
+                    </div>
+
+                    <div class="pokeball-shine"></div>
+
+                </div>
+
+
+                <p
+                    id="pokeballHint"
+                    class="pokeball-hint"
+                >
+
+                    Tap the Poké Ball ⚡
+
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PHOTO
+
+                 Put recipient photo here:
+
+                 recipient.jpg
+            ================================================== -->
+
+            <div
+                id="photoReveal"
+                class="photo-reveal"
+            >
+
+                <div class="photo-aura"></div>
+
+
+                <div class="photo-frame">
+
+                    <img
+                        src="recipient.jpg"
+                        alt="Birthday recipient"
+                    >
+
+                </div>
+
+
+                <h3>
+
+                    Look who's here... 🥹❤️
+
+                </h3>
+
+
+                <p>
+
+                    Happy Birthday,
+
+                    <span class="recipient-name">
+                        __________
+                    </span>
+
+                    ! 🎂✨
+
+                </p>
+
+
+                <p class="photo-message">
+
+                    This smile deserves
+                    to be celebrated today. ❤️
+
+                </p>
+
+
+                <button
+                    id="finalButton"
+                    class="primary-button"
+                    type="button"
+                >
+
+                    One Last Surprise ❤️
+
+                </button>
+
+            </div>
+
+
+            <div class="bottom-credit">
+
+                Made with ❤️ by
+
+                <strong>
+                    JEET BANERJEE
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SCREEN 5
+    ====================================================== -->
+
+    <section
+        id="finalScreen"
+        class="screen"
+    >
+
+        <div class="final-content">
+
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+
+            <p class="eyebrow">
+                Happy Birthday
+            </p>
+
+
+            <h1 id="finalName">
+                __________
+            </h1>
+
+
+            <div class="final-message">
+
+                <p>
+
+                    I hope this birthday
+                    brings you countless
+                    reasons to smile.
+
+                </p>
+
+
+                <p>
+
+                    May this new year of your
+                    life be filled with happiness,
+                    success, peace and beautiful
+                    memories.
+
+                </p>
+
+
+                <p>
+
+                    Keep being the amazing
+                    person you are.
+
+                </p>
+
+
+                <p class="special">
+
+                    You deserve all the happiness
+                    in the world. ❤️
+
+                </p>
+
+            </div>
+
+
+            <div class="final-love">
+
+                With lots of love ❤️
+
+            </div>
+
+
+            <div class="final-credit">
+
+                Made with ❤️ by
+
+                <strong>
+                    JEET BANERJEE
+                </strong>
+
+            </div>
+
+
+            <button
+                id="replayButton"
+                class="outline-button"
+                type="button"
+            >
+
+                Watch Again ↻
+
+            </button>
+
+
+        </div>
+
+
+        <div id="confetti"></div>
+
+    </section>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
