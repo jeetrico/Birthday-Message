@@ -71,58 +71,63 @@ The website takes the recipient through a series of animations, messages and sur
 ❤️ One Last Surprise
         ↓
 🎉 Final Birthday Celebration
+```
 
-🎨 How To Customize
+---
+
+## 🎨 How To Customize
 
 You only need to change 3 things:
 
-1. 👤 Change The Name
+### 1️⃣ 👤 Change The Name
 
 Open:
 
+```
 script.js
+```
 
 Find:
 
+```js
 const RECIPIENT_NAME = "__________";
+```
 
-Change it to the person's name.
+Change it to the person's name. For example:
 
-For example:
-
+```js
 const RECIPIENT_NAME = "Ananya";
+```
 
-That's it!
+That's it! The recipient's name will automatically appear throughout the website.
 
-The recipient's name will automatically appear throughout the website.
-
-2. 📸 Change The Photo
+### 2️⃣ 📸 Change The Photo
 
 Replace the existing:
 
+```
 recipient.jpg
+```
 
-with your own photo.
+with your own photo. Keep the filename exactly `recipient.jpg`.
 
-Keep the filename exactly:
-
-recipient.jpg
-
-3. 🎵 Change The Music
+### 3️⃣ 🎵 Change The Music
 
 Replace:
 
+```
 music.mp3
+```
 
-with your own music file.
-
-Keep the filename exactly:
-
-music.mp3
+with your own music file. Keep the filename exactly `music.mp3`.
 
 Make sure you have the right to use and redistribute the music.
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```
 Birthday-Message/
 │
 ├── index.html
@@ -131,92 +136,103 @@ Birthday-Message/
 ├── recipient.jpg
 ├── music.mp3
 └── README.md
-🛠️ Built With
-HTML5
-CSS3
-JavaScript
-HTML Canvas
+```
 
-No frameworks or complicated setup are required.
+---
 
-🚀 Getting Started
-Download The Project
+## 🛠️ Built With
 
-Download or fork this repository.
+- HTML5
+- CSS3
+- JavaScript
+- HTML Canvas
 
-Then customize:
+No frameworks or complicated setup are required. Everything runs directly in the browser.
 
-script.js
-recipient.jpg
-music.mp3
+---
 
-After that, open:
+## 🚀 Getting Started
 
-index.html
+1. Download or fork this repository.
+2. Customize `script.js`, `recipient.jpg`, and `music.mp3`.
+3. Open `index.html` in a modern web browser.
 
-in your browser.
+---
 
-🌐 Deploy With GitHub Pages
+## 🌐 Deploy With GitHub Pages
 
 You can host your personalized birthday website for free with GitHub Pages.
 
-Steps
-Fork this repository.
-Change the recipient name in script.js.
-Replace recipient.jpg.
-Replace music.mp3.
-Commit your changes.
-Go to Settings → Pages.
-Select Deploy from a branch.
-Select main.
-Select /(root).
-Click Save.
+**Steps**
+
+1. Fork this repository.
+2. Change the recipient name in `script.js`.
+3. Replace `recipient.jpg`.
+4. Replace `music.mp3`.
+5. Commit your changes.
+6. Go to **Settings → Pages**.
+7. Select **Deploy from a branch**.
+8. Select **main**.
+9. Select **/(root)**.
+10. Click **Save**.
 
 After GitHub Pages finishes deploying, your website will be available online.
 
-🔗 Live Demo
-<div align="center">
-🎂 Try The Birthday Surprise
+---
 
-👉 Open the Live Website
+## 🔗 Live Demo
+
+<div align="center">
+
+### 🎂 Try The Birthday Surprise
+
+[👉 Open the Live Website](https://jeetrico.github.io/Birthday-Message/)
 
 </div>
 
 ℹ️ The Live Demo requires GitHub Pages to be enabled for the repository.
 
-💡 Perfect For
+---
+
+## 💡 Perfect For
 
 This template can be used for:
 
-🎂 Birthdays
-❤️ Partners
-💕 Best friends
-👨‍👩‍👧 Family
-👩‍👧 Parents
-🎁 Digital gifts
-💌 Special surprises
-🥳 Celebrations
-📱 Responsive
+- 🎂 Birthdays
+- ❤️ Partners
+- 💕 Best friends
+- 👨‍👩‍👧 Family
+- 👩‍👧 Parents
+- 🎁 Digital gifts
+- 💌 Special surprises
+- 🥳 Celebrations
+
+---
+
+## 📱 Responsive
 
 The website is designed to work on:
 
-📱 Mobile phones
-📲 Tablets
-💻 Laptops
-🖥️ Desktop computers
-⭐ Support The Project
+- 📱 Mobile phones
+- 📲 Tablets
+- 💻 Laptops
+- 🖥️ Desktop computers
+
+---
+
+## ⭐ Support The Project
 
 If you like this project:
 
-⭐ Star the repository
-
-🍴 Fork the repository
-
-📤 Share it with someone who might enjoy it
+- ⭐ Star the repository
+- 🍴 Fork the repository
+- 📤 Share it with someone who might enjoy it
 
 Your support is appreciated! ❤️
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 
 Have an idea for a new animation, feature or birthday surprise?
 
@@ -224,26 +240,31 @@ Feel free to fork the project and create your own improvements.
 
 Pull requests and creative ideas are welcome. ✨
 
-🔐 Important
-📸 Photos
+---
 
-This is a public GitHub repository.
+## 🔐 Important
 
-Do not upload private photographs that you do not want other people to access.
+**📸 Photos**
 
-🎵 Music
+This is a public GitHub repository. Do not upload private photographs that you do not want other people to access.
+
+**🎵 Music**
 
 Only upload music that you have permission or a suitable license to redistribute.
 
-📜 License
+---
+
+## 📜 License
 
 This project is provided as a customizable birthday website template.
 
 Please make sure any third-party images, music, fonts or other assets you add are properly licensed.
 
 <div align="center">
-❤️ Created With Love
-Made with ❤️ by JEET BANERJEE
+
+### ❤️ Created With Love
+
+**Made with ❤️ by JEET BANERJEE**
 
 🎂 Made for birthdays.
 💕 Made for memories.
@@ -251,5 +272,4 @@ Made with ❤️ by JEET BANERJEE
 
 If you create something beautiful with this template, don't forget to ⭐ the repository!
 
-</div> ```
-That's all. ❤️
+</div>
