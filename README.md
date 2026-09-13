@@ -115,11 +115,11 @@ with your own photo. Keep the filename exactly `recipient.jpg`.
 
 Replace:
 
-```
 music.mp3
-```
 
-with your own music file. Keep the filename exactly `music.mp3`.
+with your own music file. Keep the filename exactly music.mp3.
+
+> ℹ️ **Note:** The original birthday song used here was copyrighted, and I didn't have the rights to redistribute it. So I replaced it with a short personal voiceover message instead. If you'd like background music, replace `music.mp3` with a track you own or one that's properly licensed for redistribution.
 
 Make sure you have the right to use and redistribute the music.
 
